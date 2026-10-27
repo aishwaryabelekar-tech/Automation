@@ -1,16 +1,18 @@
 
-pool: Cloud
+pool:
+  name: Cloud
 
 trigger: none
 
 resources:
   repositories:
-    - repository: Automation
+    - repository: Templates
       type: github
-      name: aishwaryabelekar-tech/Automation
-      endpoint: Git-svc
+      name: aishwaryabelekar-tech/Templates
+      endpoint: Aishh
+      
 
 stages:
-  - template: /init.yaml@Automation
-  - template: /plan.yaml@Automation
-  - template: /apply.yaml@Automation
+  - template: templates/init.yaml@Templates
+  - template: templates/plan.yaml@Templates
+  
