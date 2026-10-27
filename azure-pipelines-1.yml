@@ -14,5 +14,4 @@ resources:
 
 stages:
   - template: templates/init.yaml@Templates
-  - template: templates/plan.yaml@Templates
   
