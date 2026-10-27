@@ -1,0 +1,14 @@
+pool: Cloud
+
+trigger: none
+
+resources:
+ repositories:
+   - repository: Automation
+     type: github
+     name: aishwaryabelekar-tech/Automation
+     endpoint: Git-svc
+stages:
+  - template: aishwaryabelekar-tech/Automation/init.yaml
+  - template: aishwaryabelekar-tech/Automation/plan.yaml
+  - template: aishwaryabelekar-tech/Automation/apply.yaml  
